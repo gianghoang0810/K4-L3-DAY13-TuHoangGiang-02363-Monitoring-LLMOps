@@ -1,25 +1,30 @@
+evaluation_interval: 30s
+notification_status: configured_only_no_slack_webhook
 alerts:
-  - name: TODO_alert_1
-    severity: TODO
-    condition: TODO
-    duration: TODO
+  - name: high_request_latency
+    severity: warning
+    condition: "p95(response_sent.latency_ms, window=5m) > 3000 and count(response_sent, window=5m) >= 20"
+    duration: 5m
     type: symptom-based
     channel: slack
-    owner: TODO
+    slack_channel: "#day13-02363-alerts"
+    owner: TuHoangGiang-02363
     runbook: docs/alerts.md#alert-1
-  - name: TODO_alert_2
-    severity: TODO
-    condition: TODO
-    duration: TODO
+  - name: high_request_error_rate
+    severity: critical
+    condition: "100 * count(request_failed, window=5m) / count(request_received, window=5m) > 2 and count(request_received, window=5m) >= 20"
+    duration: 5m
     type: symptom-based
     channel: slack
-    owner: TODO
+    slack_channel: "#day13-02363-alerts"
+    owner: TuHoangGiang-02363
     runbook: docs/alerts.md#alert-2
-  - name: TODO_alert_3
-    severity: TODO
-    condition: TODO
-    duration: TODO
+  - name: low_answer_quality
+    severity: warning
+    condition: "mean(response_sent.quality_score, window=10m) < 0.75 and count(response_sent, window=10m) >= 20"
+    duration: 10m
     type: symptom-based
     channel: slack
-    owner: TODO
+    slack_channel: "#day13-02363-alerts"
+    owner: TuHoangGiang-02363
     runbook: docs/alerts.md#alert-3

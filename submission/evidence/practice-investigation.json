@@ -1,0 +1,157 @@
+{
+  "kind": "practice_only_not_official_challenge",
+  "scenario": "rag_slow",
+  "stages": [
+    {
+      "stage": "practice-before",
+      "session": "cp2-20260929T081647-practice-before",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-70d96e52",
+          "latency_ms": 391,
+          "ttft_ms": 50,
+          "cost_usd": 0.002307
+        },
+        {
+          "correlation_id": "req-7c3a7fba",
+          "latency_ms": 387,
+          "ttft_ms": 51,
+          "cost_usd": 0.001647
+        },
+        {
+          "correlation_id": "req-36649fcf",
+          "latency_ms": 378,
+          "ttft_ms": 50,
+          "cost_usd": 0.002712
+        }
+      ],
+      "verified_at": "2026-09-29T08:17:16.744215+00:00",
+      "trace_ids": [
+        "f065f837901a4a3648ee0219abad3a3b",
+        "adf56d470e9268fdd418e91996245fe6",
+        "036b18ccba8c9dc35d45777f27ad5bd0"
+      ],
+      "confirmed_traces": 3,
+      "sent_requests": 3,
+      "metrics": {
+        "requests": 3,
+        "responses": 3,
+        "failures": 0,
+        "p50": 387,
+        "p95": 391,
+        "p99": 391,
+        "ttft_p95": 51,
+        "error_rate_pct": 0.0,
+        "retrieval_success_pct": 100.0,
+        "error_breakdown": {},
+        "cost_usd": 0.006666,
+        "tokens_in": 117,
+        "tokens_out": 421,
+        "quality": 0.8,
+        "slo_good": 3
+      }
+    },
+    {
+      "stage": "practice-slow",
+      "session": "cp2-20260929T081647-practice-slow",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-53ec76cf",
+          "latency_ms": 3382,
+          "ttft_ms": 50,
+          "cost_usd": 0.001752
+        },
+        {
+          "correlation_id": "req-7b6b4a66",
+          "latency_ms": 2888,
+          "ttft_ms": 50,
+          "cost_usd": 0.001407
+        },
+        {
+          "correlation_id": "req-3a453047",
+          "latency_ms": 2898,
+          "ttft_ms": 50,
+          "cost_usd": 0.001422
+        }
+      ],
+      "verified_at": "2026-09-29T08:18:10.335011+00:00",
+      "trace_ids": [
+        "4c17803710313ce59801aa1bfad24bb4"
+      ],
+      "confirmed_traces": 1,
+      "sent_requests": 3,
+      "metrics": {
+        "requests": 3,
+        "responses": 3,
+        "failures": 0,
+        "p50": 2898,
+        "p95": 3382,
+        "p99": 3382,
+        "ttft_p95": 50,
+        "error_rate_pct": 0.0,
+        "retrieval_success_pct": 100.0,
+        "error_breakdown": {},
+        "cost_usd": 0.004581,
+        "tokens_in": 117,
+        "tokens_out": 282,
+        "quality": 0.8,
+        "slo_good": 2
+      }
+    },
+    {
+      "stage": "practice-after",
+      "session": "cp2-20260929T081647-practice-after",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-076f7fcb",
+          "latency_ms": 400,
+          "ttft_ms": 69,
+          "cost_usd": 0.001602
+        },
+        {
+          "correlation_id": "req-c93529fd",
+          "latency_ms": 383,
+          "ttft_ms": 50,
+          "cost_usd": 0.001962
+        },
+        {
+          "correlation_id": "req-79fbc515",
+          "latency_ms": 379,
+          "ttft_ms": 50,
+          "cost_usd": 0.001482
+        }
+      ],
+      "verified_at": "2026-09-29T08:18:13.675487+00:00",
+      "trace_ids": [
+        "a889cae85702eba275cc10ad74874964",
+        "d8a9fab19461de384cb5d5b1db7b45c7",
+        "cdf2d028d6365db636c71100e99688ae"
+      ],
+      "confirmed_traces": 3,
+      "sent_requests": 3,
+      "metrics": {
+        "requests": 3,
+        "responses": 3,
+        "failures": 0,
+        "p50": 383,
+        "p95": 400,
+        "p99": 400,
+        "ttft_p95": 69,
+        "error_rate_pct": 0.0,
+        "retrieval_success_pct": 100.0,
+        "error_breakdown": {},
+        "cost_usd": 0.005046,
+        "tokens_in": 117,
+        "tokens_out": 313,
+        "quality": 0.8,
+        "slo_good": 3
+      }
+    }
+  ]
+}

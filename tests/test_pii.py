@@ -1,4 +1,21 @@
 from app.pii import scrub_text
+import pytest
+
+
+@pytest.mark.parametrize("raw,kind", [
+    ("student+lab@example.com", "EMAIL"),
+    ("001092001234", "CCCD"),
+    ("0123456789012345", "CREDIT_CARD"),
+    ("0123 4567 8901 2345", "CREDIT_CARD"),
+    ("0123-4567-8901-2345", "CREDIT_CARD"),
+])
+def test_complete_redaction(raw, kind):
+    assert scrub_text(f"Value: {raw}!") == f"Value: [REDACTED_{kind}]!"
+
+
+def test_scrubbing_preserves_non_pii():
+    text = "req-abc123ef latency_ms=125 model=claude-sonnet-4-5"
+    assert scrub_text(text) == text
 
 
 def test_scrub_email() -> None:

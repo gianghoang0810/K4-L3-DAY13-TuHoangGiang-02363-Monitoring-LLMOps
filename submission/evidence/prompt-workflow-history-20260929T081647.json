@@ -1,0 +1,209 @@
+{
+  "prompt": "day13-chat",
+  "stages": [
+    {
+      "stage": "baseline",
+      "session": "cp2-20260929T081507-baseline",
+      "label": "baseline",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-35c5fb6d",
+          "latency_ms": 391,
+          "ttft_ms": 50,
+          "cost_usd": 0.002577
+        },
+        {
+          "correlation_id": "req-3f7c1813",
+          "latency_ms": 405,
+          "ttft_ms": 50,
+          "cost_usd": 0.002472
+        },
+        {
+          "correlation_id": "req-f6cacf2d",
+          "latency_ms": 401,
+          "ttft_ms": 51,
+          "cost_usd": 0.001932
+        }
+      ],
+      "verified_at": "2026-09-29T08:15:19.954967+00:00"
+    },
+    {
+      "stage": "candidate",
+      "session": "cp2-20260929T081507-candidate",
+      "label": "candidate",
+      "version": 2,
+      "requests": [
+        {
+          "correlation_id": "req-e1d94bc9",
+          "latency_ms": 376,
+          "ttft_ms": 50,
+          "cost_usd": 0.00186
+        },
+        {
+          "correlation_id": "req-07594116",
+          "latency_ms": 376,
+          "ttft_ms": 50,
+          "cost_usd": 0.00159
+        },
+        {
+          "correlation_id": "req-80e8868d",
+          "latency_ms": 922,
+          "ttft_ms": 50,
+          "cost_usd": 0.00198
+        }
+      ],
+      "verified_at": "2026-09-29T08:15:24.641930+00:00"
+    },
+    {
+      "stage": "promoted",
+      "session": "cp2-20260929T081507-promoted",
+      "label": "production",
+      "version": 2,
+      "requests": [
+        {
+          "correlation_id": "req-61071557",
+          "latency_ms": 403,
+          "ttft_ms": 50,
+          "cost_usd": 0.0024
+        },
+        {
+          "correlation_id": "req-4f57f50f",
+          "latency_ms": 378,
+          "ttft_ms": 50,
+          "cost_usd": 0.002385
+        },
+        {
+          "correlation_id": "req-49e817d1",
+          "latency_ms": 398,
+          "ttft_ms": 50,
+          "cost_usd": 0.00231
+        }
+      ],
+      "verified_at": "2026-09-29T08:15:26.626890+00:00"
+    },
+    {
+      "stage": "rollback",
+      "session": "cp2-20260929T081507-rollback",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-77754ac0",
+          "latency_ms": 380,
+          "ttft_ms": 50,
+          "cost_usd": 0.001497
+        },
+        {
+          "correlation_id": "req-85b05359",
+          "latency_ms": 382,
+          "ttft_ms": 50,
+          "cost_usd": 0.001692
+        },
+        {
+          "correlation_id": "req-3c2f4845",
+          "latency_ms": 383,
+          "ttft_ms": 50,
+          "cost_usd": 0.002007
+        }
+      ],
+      "verified_at": "2026-09-29T08:15:28.619237+00:00"
+    },
+    {
+      "stage": "pii",
+      "session": "cp2-20260929T081507-pii",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-c3d92598",
+          "latency_ms": 374,
+          "ttft_ms": 50,
+          "cost_usd": 0.001383
+        }
+      ],
+      "verified_at": "2026-09-29T08:15:29.490833+00:00"
+    },
+    {
+      "stage": "practice-before",
+      "session": "cp2-20260929T081507-practice-before",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-331e10b4",
+          "latency_ms": 376,
+          "ttft_ms": 50,
+          "cost_usd": 0.002787
+        },
+        {
+          "correlation_id": "req-473e61b2",
+          "latency_ms": 379,
+          "ttft_ms": 51,
+          "cost_usd": 0.001512
+        },
+        {
+          "correlation_id": "req-0f1c9ce0",
+          "latency_ms": 380,
+          "ttft_ms": 50,
+          "cost_usd": 0.002442
+        }
+      ],
+      "verified_at": "2026-09-29T08:15:31.153459+00:00"
+    },
+    {
+      "stage": "practice-slow",
+      "session": "cp2-20260929T081507-practice-slow",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-07b46a1b",
+          "latency_ms": 2885,
+          "ttft_ms": 50,
+          "cost_usd": 0.002142
+        },
+        {
+          "correlation_id": "req-203038c2",
+          "latency_ms": 2897,
+          "ttft_ms": 50,
+          "cost_usd": 0.002292
+        },
+        {
+          "correlation_id": "req-25a5ca4f",
+          "latency_ms": 2888,
+          "ttft_ms": 50,
+          "cost_usd": 0.001872
+        }
+      ],
+      "verified_at": "2026-09-29T08:15:40.371049+00:00"
+    },
+    {
+      "stage": "practice-after",
+      "session": "cp2-20260929T081507-practice-after",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-242468b1",
+          "latency_ms": 395,
+          "ttft_ms": 50,
+          "cost_usd": 0.002487
+        },
+        {
+          "correlation_id": "req-b9d174ca",
+          "latency_ms": 400,
+          "ttft_ms": 50,
+          "cost_usd": 0.001407
+        },
+        {
+          "correlation_id": "req-1174f92a",
+          "latency_ms": 379,
+          "ttft_ms": 50,
+          "cost_usd": 0.002577
+        }
+      ],
+      "verified_at": "2026-09-29T08:15:42.078502+00:00"
+    }
+  ]
+}

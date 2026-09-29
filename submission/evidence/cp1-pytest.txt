@@ -1,0 +1,3 @@
+CP1 verification, before final submission commit
+Command: .\.venv\Scripts\python.exe -m pytest -q
+Recorded result: 30 passed in 7.75s

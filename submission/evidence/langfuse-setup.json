@@ -1,0 +1,686 @@
+{
+  "session_id": "setup-20260929T075604927697",
+  "trace_count": 10,
+  "traces": [
+    {
+      "trace_id": "bd7dbc89af7a710ba378a63be0d5a560",
+      "url": "https://cloud.langfuse.com/project/cmumco6ni1z2yad0cma0yh742/traces/bd7dbc89af7a710ba378a63be0d5a560",
+      "observations": [
+        {
+          "name": "llm-generation",
+          "type": "GENERATION",
+          "id": "e3f57df5e8b0294e",
+          "parent_id": "5c5937e2b4bf2357",
+          "model": "claude-sonnet-4-5",
+          "usage": {
+            "input": 34,
+            "output": 111,
+            "total": 145
+          },
+          "cost": {
+            "total": 0.001767
+          },
+          "metadata": {
+            "correlation_id": "req-0dccc2b7",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "simulated": true,
+            "ttft_ms": 50,
+            "prompt_source": "local-fallback",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat"
+          }
+        },
+        {
+          "name": "retrieval",
+          "type": "RETRIEVER",
+          "id": "6600efe553daa3bf",
+          "parent_id": "5c5937e2b4bf2357",
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-0dccc2b7",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "tool_success": true,
+            "doc_count": 1
+          }
+        },
+        {
+          "name": "lab-agent-run",
+          "type": "AGENT",
+          "id": "5c5937e2b4bf2357",
+          "parent_id": null,
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-0dccc2b7",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "prompt_fetch_error": "LangfuseFallback",
+            "prompt_source": "local-fallback",
+            "prompt_version": "local-v1",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat",
+            "query_preview": "Explain how metrics logs and traces help debug an API.",
+            "doc_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "f7d1aab868a0d6a401d7f70f69c9935f",
+      "url": "https://cloud.langfuse.com/project/cmumco6ni1z2yad0cma0yh742/traces/f7d1aab868a0d6a401d7f70f69c9935f",
+      "observations": [
+        {
+          "name": "llm-generation",
+          "type": "GENERATION",
+          "id": "d8e324598ee14772",
+          "parent_id": "74ec55bd8bfdc3da",
+          "model": "claude-sonnet-4-5",
+          "usage": {
+            "input": 34,
+            "output": 157,
+            "total": 191
+          },
+          "cost": {
+            "total": 0.002457
+          },
+          "metadata": {
+            "correlation_id": "req-bf57b98f",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "simulated": true,
+            "ttft_ms": 82,
+            "prompt_source": "local-fallback",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat"
+          }
+        },
+        {
+          "name": "retrieval",
+          "type": "RETRIEVER",
+          "id": "e28be8d11f7d0fc1",
+          "parent_id": "74ec55bd8bfdc3da",
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-bf57b98f",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "tool_success": true,
+            "doc_count": 1
+          }
+        },
+        {
+          "name": "lab-agent-run",
+          "type": "AGENT",
+          "id": "74ec55bd8bfdc3da",
+          "parent_id": null,
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-bf57b98f",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "prompt_fetch_error": "LangfuseFallback",
+            "prompt_source": "local-fallback",
+            "prompt_version": "local-v1",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat",
+            "query_preview": "Explain how metrics logs and traces help debug an API.",
+            "doc_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "30a0eda91aa8b31e813e5a19a7d5d7ff",
+      "url": "https://cloud.langfuse.com/project/cmumco6ni1z2yad0cma0yh742/traces/30a0eda91aa8b31e813e5a19a7d5d7ff",
+      "observations": [
+        {
+          "name": "llm-generation",
+          "type": "GENERATION",
+          "id": "af3391bddec2893f",
+          "parent_id": "4ed95b51c657ae7f",
+          "model": "claude-sonnet-4-5",
+          "usage": {
+            "input": 34,
+            "output": 90,
+            "total": 124
+          },
+          "cost": {
+            "total": 0.001452
+          },
+          "metadata": {
+            "correlation_id": "req-da61b4c5",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "simulated": true,
+            "ttft_ms": 51,
+            "prompt_source": "local-fallback",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat"
+          }
+        },
+        {
+          "name": "retrieval",
+          "type": "RETRIEVER",
+          "id": "df604e54c3affee6",
+          "parent_id": "4ed95b51c657ae7f",
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-da61b4c5",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "tool_success": true,
+            "doc_count": 1
+          }
+        },
+        {
+          "name": "lab-agent-run",
+          "type": "AGENT",
+          "id": "4ed95b51c657ae7f",
+          "parent_id": null,
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-da61b4c5",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "prompt_fetch_error": "LangfuseFallback",
+            "prompt_source": "local-fallback",
+            "prompt_version": "local-v1",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat",
+            "query_preview": "Explain how metrics logs and traces help debug an API.",
+            "doc_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "842c9e2da83c5ddb771c6adff859e3b2",
+      "url": "https://cloud.langfuse.com/project/cmumco6ni1z2yad0cma0yh742/traces/842c9e2da83c5ddb771c6adff859e3b2",
+      "observations": [
+        {
+          "name": "llm-generation",
+          "type": "GENERATION",
+          "id": "0590f12fedc70561",
+          "parent_id": "3c00c4d4ec5e56c4",
+          "model": "claude-sonnet-4-5",
+          "usage": {
+            "input": 34,
+            "output": 173,
+            "total": 207
+          },
+          "cost": {
+            "total": 0.002697
+          },
+          "metadata": {
+            "correlation_id": "req-41e96966",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "simulated": true,
+            "ttft_ms": 50,
+            "prompt_source": "local-fallback",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat"
+          }
+        },
+        {
+          "name": "retrieval",
+          "type": "RETRIEVER",
+          "id": "aec2d25421c8ed2f",
+          "parent_id": "3c00c4d4ec5e56c4",
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-41e96966",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "tool_success": true,
+            "doc_count": 1
+          }
+        },
+        {
+          "name": "lab-agent-run",
+          "type": "AGENT",
+          "id": "3c00c4d4ec5e56c4",
+          "parent_id": null,
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-41e96966",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "prompt_fetch_error": "LangfuseFallback",
+            "prompt_source": "local-fallback",
+            "prompt_version": "local-v1",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat",
+            "query_preview": "Explain how metrics logs and traces help debug an API.",
+            "doc_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "20a6bddb40761e170814b5ad4404f6ce",
+      "url": "https://cloud.langfuse.com/project/cmumco6ni1z2yad0cma0yh742/traces/20a6bddb40761e170814b5ad4404f6ce",
+      "observations": [
+        {
+          "name": "llm-generation",
+          "type": "GENERATION",
+          "id": "ab96eedc37427f94",
+          "parent_id": "4615b4178bc33c55",
+          "model": "claude-sonnet-4-5",
+          "usage": {
+            "input": 34,
+            "output": 111,
+            "total": 145
+          },
+          "cost": {
+            "total": 0.001767
+          },
+          "metadata": {
+            "correlation_id": "req-3b606158",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "simulated": true,
+            "ttft_ms": 50,
+            "prompt_source": "local-fallback",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat"
+          }
+        },
+        {
+          "name": "retrieval",
+          "type": "RETRIEVER",
+          "id": "c98b3f34695e17e5",
+          "parent_id": "4615b4178bc33c55",
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-3b606158",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "tool_success": true,
+            "doc_count": 1
+          }
+        },
+        {
+          "name": "lab-agent-run",
+          "type": "AGENT",
+          "id": "4615b4178bc33c55",
+          "parent_id": null,
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-3b606158",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "prompt_fetch_error": "LangfuseFallback",
+            "prompt_source": "local-fallback",
+            "prompt_version": "local-v1",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat",
+            "query_preview": "Explain how metrics logs and traces help debug an API.",
+            "doc_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "0379f23e5a9af16cce7f904c2490e824",
+      "url": "https://cloud.langfuse.com/project/cmumco6ni1z2yad0cma0yh742/traces/0379f23e5a9af16cce7f904c2490e824",
+      "observations": [
+        {
+          "name": "llm-generation",
+          "type": "GENERATION",
+          "id": "493d95c7b73be0c3",
+          "parent_id": "9209bd630fb1e1a9",
+          "model": "claude-sonnet-4-5",
+          "usage": {
+            "input": 34,
+            "output": 148,
+            "total": 182
+          },
+          "cost": {
+            "total": 0.002322
+          },
+          "metadata": {
+            "correlation_id": "req-0c061a33",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "simulated": true,
+            "ttft_ms": 50,
+            "prompt_source": "local-fallback",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat"
+          }
+        },
+        {
+          "name": "retrieval",
+          "type": "RETRIEVER",
+          "id": "bf0a1048639b42b5",
+          "parent_id": "9209bd630fb1e1a9",
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-0c061a33",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "tool_success": true,
+            "doc_count": 1
+          }
+        },
+        {
+          "name": "lab-agent-run",
+          "type": "AGENT",
+          "id": "9209bd630fb1e1a9",
+          "parent_id": null,
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-0c061a33",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "prompt_fetch_error": "LangfuseFallback",
+            "prompt_source": "local-fallback",
+            "prompt_version": "local-v1",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat",
+            "query_preview": "Explain how metrics logs and traces help debug an API.",
+            "doc_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "2a5876d6d6ca5a7123521823c4c0a13a",
+      "url": "https://cloud.langfuse.com/project/cmumco6ni1z2yad0cma0yh742/traces/2a5876d6d6ca5a7123521823c4c0a13a",
+      "observations": [
+        {
+          "name": "llm-generation",
+          "type": "GENERATION",
+          "id": "4e471f168523062d",
+          "parent_id": "9e5ce36f34748fbe",
+          "model": "claude-sonnet-4-5",
+          "usage": {
+            "input": 34,
+            "output": 121,
+            "total": 155
+          },
+          "cost": {
+            "total": 0.001917
+          },
+          "metadata": {
+            "correlation_id": "req-0c1a4a2c",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "simulated": true,
+            "ttft_ms": 50,
+            "prompt_source": "local-fallback",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat"
+          }
+        },
+        {
+          "name": "retrieval",
+          "type": "RETRIEVER",
+          "id": "26096655e4d1578e",
+          "parent_id": "9e5ce36f34748fbe",
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-0c1a4a2c",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "tool_success": true,
+            "doc_count": 1
+          }
+        },
+        {
+          "name": "lab-agent-run",
+          "type": "AGENT",
+          "id": "9e5ce36f34748fbe",
+          "parent_id": null,
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-0c1a4a2c",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "prompt_fetch_error": "LangfuseFallback",
+            "prompt_source": "local-fallback",
+            "prompt_version": "local-v1",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat",
+            "query_preview": "Explain how metrics logs and traces help debug an API.",
+            "doc_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "8c995074f3ff13830ad98068cf2fac2c",
+      "url": "https://cloud.langfuse.com/project/cmumco6ni1z2yad0cma0yh742/traces/8c995074f3ff13830ad98068cf2fac2c",
+      "observations": [
+        {
+          "name": "llm-generation",
+          "type": "GENERATION",
+          "id": "fabb441afab929c4",
+          "parent_id": "d6ad474b261ce78b",
+          "model": "claude-sonnet-4-5",
+          "usage": {
+            "input": 34,
+            "output": 95,
+            "total": 129
+          },
+          "cost": {
+            "total": 0.001527
+          },
+          "metadata": {
+            "correlation_id": "req-0a96b888",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "simulated": true,
+            "ttft_ms": 50,
+            "prompt_source": "local-fallback",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat"
+          }
+        },
+        {
+          "name": "retrieval",
+          "type": "RETRIEVER",
+          "id": "deb28ffef2ae7b70",
+          "parent_id": "d6ad474b261ce78b",
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-0a96b888",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "tool_success": true,
+            "doc_count": 1
+          }
+        },
+        {
+          "name": "lab-agent-run",
+          "type": "AGENT",
+          "id": "d6ad474b261ce78b",
+          "parent_id": null,
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-0a96b888",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "prompt_fetch_error": "LangfuseFallback",
+            "prompt_source": "local-fallback",
+            "prompt_version": "local-v1",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat",
+            "query_preview": "Explain how metrics logs and traces help debug an API.",
+            "doc_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "e33e03dc28f817755da05eede0d11961",
+      "url": "https://cloud.langfuse.com/project/cmumco6ni1z2yad0cma0yh742/traces/e33e03dc28f817755da05eede0d11961",
+      "observations": [
+        {
+          "name": "llm-generation",
+          "type": "GENERATION",
+          "id": "fc57ab0efa3fba58",
+          "parent_id": "0d7658e80eae9f97",
+          "model": "claude-sonnet-4-5",
+          "usage": {
+            "input": 34,
+            "output": 113,
+            "total": 147
+          },
+          "cost": {
+            "total": 0.001797
+          },
+          "metadata": {
+            "correlation_id": "req-977765cb",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "simulated": true,
+            "ttft_ms": 50,
+            "prompt_source": "local-fallback",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat"
+          }
+        },
+        {
+          "name": "retrieval",
+          "type": "RETRIEVER",
+          "id": "2803ca0b4bd87013",
+          "parent_id": "0d7658e80eae9f97",
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-977765cb",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "tool_success": true,
+            "doc_count": 1
+          }
+        },
+        {
+          "name": "lab-agent-run",
+          "type": "AGENT",
+          "id": "0d7658e80eae9f97",
+          "parent_id": null,
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-977765cb",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "prompt_fetch_error": "LangfuseFallback",
+            "prompt_source": "local-fallback",
+            "prompt_version": "local-v1",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat",
+            "query_preview": "Explain how metrics logs and traces help debug an API.",
+            "doc_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "5f3e157a9038d4fba192f12362688a63",
+      "url": "https://cloud.langfuse.com/project/cmumco6ni1z2yad0cma0yh742/traces/5f3e157a9038d4fba192f12362688a63",
+      "observations": [
+        {
+          "name": "llm-generation",
+          "type": "GENERATION",
+          "id": "fe05c52b3ef6dfe7",
+          "parent_id": "6dfd370b9674bb5e",
+          "model": "claude-sonnet-4-5",
+          "usage": {
+            "input": 34,
+            "output": 166,
+            "total": 200
+          },
+          "cost": {
+            "total": 0.002592
+          },
+          "metadata": {
+            "correlation_id": "req-7b0cf719",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "simulated": true,
+            "ttft_ms": 51,
+            "prompt_source": "local-fallback",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat"
+          }
+        },
+        {
+          "name": "retrieval",
+          "type": "RETRIEVER",
+          "id": "0030dd991013bcf5",
+          "parent_id": "6dfd370b9674bb5e",
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-7b0cf719",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "tool_success": true,
+            "doc_count": 1
+          }
+        },
+        {
+          "name": "lab-agent-run",
+          "type": "AGENT",
+          "id": "6dfd370b9674bb5e",
+          "parent_id": null,
+          "model": "claude-sonnet-4-5",
+          "usage": {},
+          "cost": {},
+          "metadata": {
+            "correlation_id": "req-7b0cf719",
+            "model": "claude-sonnet-4-5",
+            "feature": "qa",
+            "prompt_fetch_error": "LangfuseFallback",
+            "prompt_source": "local-fallback",
+            "prompt_version": "local-v1",
+            "prompt_label": "production",
+            "prompt_name": "day13-chat",
+            "query_preview": "Explain how metrics logs and traces help debug an API.",
+            "doc_count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "service": "api",
+    "payload": {
+      "message_preview": "Email [REDACTED_EMAIL], phone [REDACTED_PHONE_VN], CCCD [REDACTED_CCCD], card [R..."
+    },
+    "event": "request_received",
+    "session_id": "cp2-20260929T081647-pii",
+    "feature": "qa",
+    "correlation_id": "req-e9f97407",
+    "env": "dev",
+    "user_id_hash": "f459bce2dc0a",
+    "model": "claude-sonnet-4-5",
+    "level": "info",
+    "ts": "2026-09-29T08:17:14.342722Z"
+  },
+  {
+    "service": "api",
+    "latency_ms": 388,
+    "ttft_ms": 50,
+    "tokens_in": 56,
+    "tokens_out": 152,
+    "cost_usd": 0.002448,
+    "quality_score": 0.8,
+    "tool_name": "retrieval",
+    "tool_success": true,
+    "payload": {
+      "answer_preview": "Starter answer. You should improve this output logic and add better quality chec..."
+    },
+    "event": "response_sent",
+    "session_id": "cp2-20260929T081647-pii",
+    "feature": "qa",
+    "correlation_id": "req-e9f97407",
+    "env": "dev",
+    "user_id_hash": "f459bce2dc0a",
+    "model": "claude-sonnet-4-5",
+    "level": "info",
+    "ts": "2026-09-29T08:17:14.733897Z"
+  }
+]

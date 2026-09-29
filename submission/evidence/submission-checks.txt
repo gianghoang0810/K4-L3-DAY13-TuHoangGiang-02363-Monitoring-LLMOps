@@ -1,0 +1,4 @@
+Configured credential scan: 2 keys checked; no matches in candidate repository files
+Local Markdown links in project documents: OK (code examples excluded)
+Runtime sample PII absent from exported evidence
+This is a targeted scan, not a complete security audit or screenshot check.

@@ -1,0 +1,262 @@
+{
+  "prompt": "day13-chat",
+  "stages": [
+    {
+      "stage": "baseline",
+      "session": "cp2-20260929T081647-baseline",
+      "label": "baseline",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-c62ad58b",
+          "latency_ms": 375,
+          "ttft_ms": 50,
+          "cost_usd": 0.002142
+        },
+        {
+          "correlation_id": "req-dc9d832b",
+          "latency_ms": 377,
+          "ttft_ms": 50,
+          "cost_usd": 0.002397
+        },
+        {
+          "correlation_id": "req-c2915f89",
+          "latency_ms": 393,
+          "ttft_ms": 50,
+          "cost_usd": 0.001737
+        }
+      ],
+      "verified_at": "2026-09-29T08:17:06.346520+00:00",
+      "trace_ids": [
+        "038329dd7e9149f38999105f940b4984",
+        "1e32ffa6fcccfbc3bdd3f4ccff4fb10a",
+        "8317c5e6dac64da51dbe9c7422d46eba"
+      ],
+      "confirmed_traces": 3,
+      "sent_requests": 3
+    },
+    {
+      "stage": "candidate",
+      "session": "cp2-20260929T081647-candidate",
+      "label": "candidate",
+      "version": 2,
+      "requests": [
+        {
+          "correlation_id": "req-8da9a5d4",
+          "latency_ms": 377,
+          "ttft_ms": 50,
+          "cost_usd": 0.00243
+        },
+        {
+          "correlation_id": "req-9b2544c5",
+          "latency_ms": 382,
+          "ttft_ms": 50,
+          "cost_usd": 0.00168
+        },
+        {
+          "correlation_id": "req-d8c792bc",
+          "latency_ms": 470,
+          "ttft_ms": 50,
+          "cost_usd": 0.002715
+        }
+      ],
+      "verified_at": "2026-09-29T08:17:09.904898+00:00",
+      "trace_ids": [
+        "21c71c0ea64691c52bf22d9a89a081e8",
+        "ae6103a937c075b2d7b7e949f2bec88f",
+        "f41f6ea16dc35d6ce528fba698c8ea0a"
+      ],
+      "confirmed_traces": 3,
+      "sent_requests": 3
+    },
+    {
+      "stage": "promoted",
+      "session": "cp2-20260929T081647-promoted",
+      "label": "production",
+      "version": 2,
+      "requests": [
+        {
+          "correlation_id": "req-36241c86",
+          "latency_ms": 381,
+          "ttft_ms": 50,
+          "cost_usd": 0.00204
+        },
+        {
+          "correlation_id": "req-d4c60eec",
+          "latency_ms": 430,
+          "ttft_ms": 53,
+          "cost_usd": 0.002115
+        },
+        {
+          "correlation_id": "req-dd9d6770",
+          "latency_ms": 376,
+          "ttft_ms": 50,
+          "cost_usd": 0.00234
+        }
+      ],
+      "verified_at": "2026-09-29T08:17:12.051950+00:00",
+      "trace_ids": [
+        "8591d412849118b8e312f214cf99dffd",
+        "fdc96de52f943d198cab4791d7eb99dc",
+        "8b0e76f647e44a1ae8139ce71f01ec53"
+      ],
+      "confirmed_traces": 3,
+      "sent_requests": 3
+    },
+    {
+      "stage": "rollback",
+      "session": "cp2-20260929T081647-rollback",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-52a65a54",
+          "latency_ms": 379,
+          "ttft_ms": 50,
+          "cost_usd": 0.002592
+        },
+        {
+          "correlation_id": "req-63b7a7fa",
+          "latency_ms": 393,
+          "ttft_ms": 56,
+          "cost_usd": 0.002202
+        },
+        {
+          "correlation_id": "req-412bc75f",
+          "latency_ms": 411,
+          "ttft_ms": 50,
+          "cost_usd": 0.001527
+        }
+      ],
+      "verified_at": "2026-09-29T08:17:14.110932+00:00",
+      "trace_ids": [
+        "700051eceb4ca35b221e1d68f51354e4",
+        "b753d1d256a3fefafcb0a0bb783fe18b",
+        "e3e4b66182313bac6103eb783bb93fe4"
+      ],
+      "confirmed_traces": 3,
+      "sent_requests": 3
+    },
+    {
+      "stage": "pii",
+      "session": "cp2-20260929T081647-pii",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-e9f97407",
+          "latency_ms": 388,
+          "ttft_ms": 50,
+          "cost_usd": 0.002448
+        }
+      ],
+      "verified_at": "2026-09-29T08:17:15.050854+00:00",
+      "trace_ids": [
+        "000edb1c4e92dd5edf1dccc6a090bd93"
+      ],
+      "confirmed_traces": 1,
+      "sent_requests": 1
+    },
+    {
+      "stage": "practice-before",
+      "session": "cp2-20260929T081647-practice-before",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-70d96e52",
+          "latency_ms": 391,
+          "ttft_ms": 50,
+          "cost_usd": 0.002307
+        },
+        {
+          "correlation_id": "req-7c3a7fba",
+          "latency_ms": 387,
+          "ttft_ms": 51,
+          "cost_usd": 0.001647
+        },
+        {
+          "correlation_id": "req-36649fcf",
+          "latency_ms": 378,
+          "ttft_ms": 50,
+          "cost_usd": 0.002712
+        }
+      ],
+      "verified_at": "2026-09-29T08:17:16.744215+00:00",
+      "trace_ids": [
+        "f065f837901a4a3648ee0219abad3a3b",
+        "adf56d470e9268fdd418e91996245fe6",
+        "036b18ccba8c9dc35d45777f27ad5bd0"
+      ],
+      "confirmed_traces": 3,
+      "sent_requests": 3
+    },
+    {
+      "stage": "practice-slow",
+      "session": "cp2-20260929T081647-practice-slow",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-53ec76cf",
+          "latency_ms": 3382,
+          "ttft_ms": 50,
+          "cost_usd": 0.001752
+        },
+        {
+          "correlation_id": "req-7b6b4a66",
+          "latency_ms": 2888,
+          "ttft_ms": 50,
+          "cost_usd": 0.001407
+        },
+        {
+          "correlation_id": "req-3a453047",
+          "latency_ms": 2898,
+          "ttft_ms": 50,
+          "cost_usd": 0.001422
+        }
+      ],
+      "verified_at": "2026-09-29T08:18:10.335011+00:00",
+      "trace_ids": [
+        "4c17803710313ce59801aa1bfad24bb4"
+      ],
+      "confirmed_traces": 1,
+      "sent_requests": 3
+    },
+    {
+      "stage": "practice-after",
+      "session": "cp2-20260929T081647-practice-after",
+      "label": "production",
+      "version": 1,
+      "requests": [
+        {
+          "correlation_id": "req-076f7fcb",
+          "latency_ms": 400,
+          "ttft_ms": 69,
+          "cost_usd": 0.001602
+        },
+        {
+          "correlation_id": "req-c93529fd",
+          "latency_ms": 383,
+          "ttft_ms": 50,
+          "cost_usd": 0.001962
+        },
+        {
+          "correlation_id": "req-79fbc515",
+          "latency_ms": 379,
+          "ttft_ms": 50,
+          "cost_usd": 0.001482
+        }
+      ],
+      "verified_at": "2026-09-29T08:18:13.675487+00:00",
+      "trace_ids": [
+        "a889cae85702eba275cc10ad74874964",
+        "d8a9fab19461de384cb5d5b1db7b45c7",
+        "cdf2d028d6365db636c71100e99688ae"
+      ],
+      "confirmed_traces": 3,
+      "sent_requests": 3
+    }
+  ],
+  "production_version_after_rollback": 1
+}

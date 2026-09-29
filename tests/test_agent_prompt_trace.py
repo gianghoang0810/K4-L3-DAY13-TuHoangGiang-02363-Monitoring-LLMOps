@@ -20,12 +20,16 @@ class RecordingLangfuseClient:
     def __init__(self) -> None:
         self.prompt = ManagedPrompt()
         self.span_updates: list[dict] = []
+        self.generation_updates: list[dict] = []
 
     def get_prompt(self, name: str, **kwargs):
         return self.prompt
 
     def update_current_span(self, **kwargs) -> None:
         self.span_updates.append(kwargs)
+
+    def update_current_generation(self, **kwargs) -> None:
+        self.generation_updates.append(kwargs)
 
 
 def test_agent_records_prompt_version_with_v4_observation_api(monkeypatch) -> None:
@@ -67,3 +71,23 @@ def test_agent_records_prompt_version_with_v4_observation_api(monkeypatch) -> No
     assert span_update["version"] == "3"
     assert propagated[0]["metadata"]["correlation_id"] == "req-12345678"
     assert propagated[-1]["prompt"] is client.prompt
+    assert client.span_updates[0]["metadata"]["tool_success"] is True
+    generation = client.generation_updates[0]
+    assert generation["prompt"] is client.prompt
+    assert generation["usage_details"]["input"] > 0
+    assert generation["usage_details"]["output"] > 0
+    assert generation["cost_details"]["total"] == agent._estimate_cost(
+        generation["usage_details"]["input"], generation["usage_details"]["output"]
+    )
+
+
+def test_generation_scrubs_prompt_before_export(monkeypatch):
+    from app.prompt_management import ResolvedPrompt
+    client = RecordingLangfuseClient()
+    monkeypatch.setattr(agent_module, "get_langfuse_client", lambda: client)
+    agent = agent_module.LabAgent()
+    prompt = ResolvedPrompt(text="Email: student@example.com", name="day13-chat",
+                            label="production", version="local-v1", source="local")
+    agent._generate(prompt)
+    assert "student@example.com" not in client.generation_updates[0]["input"]
+    assert "[REDACTED_EMAIL]" in client.generation_updates[0]["input"]

@@ -7,7 +7,16 @@ primary_slo:
     total_event: 'event == "request_received"'
   target_percent: 99.5
   error_budget_percent: 0.5
-  note: Học viên phải giải thích hoặc điều chỉnh ngưỡng bằng baseline của mình.
+  note: >-
+    Giữ ngưỡng lab 3000 ms, đủ dư địa so với fake LLM bình thường.
+    Request lỗi hoặc thành công nhưng quá 3000 ms đều tiêu hao error budget.
+    Workload ngắn chưa chứng minh SLO 28 ngày; cần đánh giá lại với LLM thật.
+  error_budget_formula: "total_requests_28d * (1 - 0.995)"
+  example_total_requests: 10000
+  example_allowed_bad_requests: 50
+  measurement_note: >-
+    Ghép request_received với response_sent/request_failed theo correlation_id.
+    Chờ request kết thúc hoặc quá timeout trước khi tính bad event.
 guardrails:
   error_rate_pct_max: 2
   daily_cost_usd_max: 2.5

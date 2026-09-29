@@ -1,34 +1,35 @@
-# Evidence cá nhân
+# Evidence cá nhân — K4-L3A Day 13 Monitoring & LLMOps
 
-Đặt ảnh hoặc output text dùng để chấm vào thư mục này. Danh sách đầy đủ xem tại [docs/SUBMISSION.md](../../docs/SUBMISSION.md).
+Toàn bộ 14 minh chứng theo quy định của [docs/SUBMISSION.md](../../docs/SUBMISSION.md) đã được thu thập. Có thêm ảnh `10a` cho trạng thái trước rollback và file `15` cho lần xác minh sau khắc phục.
 
-Tên file gợi ý:
+## Danh mục minh chứng chính thức (01 đến 14)
 
-```text
-01-pytest.png
-02-log-validator.png
-03-dashboard-validator.png
-04-structured-log.png
-05-pii-redaction.png
-06-trace-list.png
-07-trace-waterfall.png
-08-trace-metadata.png
-09-prompt-versions.png
-10-prompt-rollback.png
-11-dashboard-overview.png
-12-incident-metric.png
-13-incident-log.png
-14-incident-trace.png
-```
+| STT | File evidence | Định dạng | Nội dung kiểm chứng |
+|:---:|---|:---:|---|
+| 01 | [01-pytest.txt](01-pytest.txt) | Output text | Kết quả `pytest -q`: 36 passed |
+| 02 | [02-log-validator.txt](02-log-validator.txt) | Output text | Kết quả `validate_logs.py`: 100/100, 0 PII leak |
+| 03 | [03-dashboard-validator.txt](03-dashboard-validator.txt) | Output text | Kết quả `validate_dashboard.py`: 6/6 panel hợp lệ |
+| 04 | [04-structured-log.png](04-structured-log.png) | Ảnh terminal | Dòng log JSON chuẩn (correlation_id, latency, model, env) |
+| 05 | [05-pii-redaction.png](05-pii-redaction.png) | Ảnh terminal | Log đầu ra đã che thông tin nhạy cảm [REDACTED_*] |
+| 06 | [06-trace-list.png](06-trace-list.png) | Ảnh Langfuse | Danh sách ≥10 traces trong project cá nhân |
+| 07 | [07-trace-waterfall.png](07-trace-waterfall.png) | Ảnh Langfuse | Cây span cha-con (lab-agent-run → retrieval + generation) |
+| 08 | [08-trace-metadata.png](08-trace-metadata.png) | Ảnh Langfuse | Trace metadata (correlation_id, prompt version, tokens, cost) |
+| 09 | [09-prompt-versions.png](09-prompt-versions.png) | Ảnh Langfuse | Quản lý prompt `day13-chat` có cả Version 1 và Version 2 |
+| 10a | [10a-prompt-production-v2.png](10a-prompt-production-v2.png) | Ảnh Langfuse | Trace trước rollback có `prompt_version=2`, `prompt_label=production` |
+| 10 | [10-prompt-rollback.png](10-prompt-rollback.png) | Ảnh Langfuse | Trạng thái cuối: nhãn `production` đã rollback về v1 |
+| 11 | [11-dashboard-overview.png](11-dashboard-overview.png) | Ảnh Dashboard | Dashboard CP2 có 6 panel và 64 requests |
+| 12 | [12-incident-metric.png](12-incident-metric.png) | Ảnh Dashboard | Metric độ trễ P95 tăng vọt khi xảy ra sự cố challenge |
+| 13 | [13-incident-log.png](13-incident-log.png) | Ảnh terminal | Dòng log của request bị chậm `req-6cd2ab26` (latency 4213 ms) |
+| 14 | [14-incident-trace.png](14-incident-trace.png) | Ảnh Langfuse | Trace `e596d0901341c7a7f7767db8eb6d943d` thấy span retrieval 2.5s |
+| 15 | [15-post-fix-verification.json](15-post-fix-verification.json) | JSON runtime | Incident đã tắt; 5 request challenge mới đều dưới 400 ms theo server log |
 
-Có thể dùng `.txt` cho output của tests/validators. Có thể tách dashboard thành nhiều ảnh nếu một ảnh không đọc rõ.
+## Dữ liệu bổ trợ & API Snapshot
+- [05-pii-redaction.json](05-pii-redaction.json): Log runtime trích xuất đã redact PII.
+- [cp2-cloud-observations.json](cp2-cloud-observations.json): 20 traces / 60 observations đọc từ Langfuse Cloud API.
+- [prompt-workflow.json](prompt-workflow.json): Quy trình kiểm chứng prompt v1/v2, promote và rollback.
+- [dashboard-metrics.json](dashboard-metrics.json), [11-dashboard-overview.html](11-dashboard-overview.html): Snapshot CP2 khớp ảnh `11`, gồm 64 requests.
+- [12-incident-dashboard-metrics.json](12-incident-dashboard-metrics.json), [12-incident-dashboard.html](12-incident-dashboard.html): Snapshot CP3 trong cửa sổ challenge, gồm 5 requests.
+- [practice-investigation.json](practice-investigation.json): Dữ liệu kịch bản luyện tập trước đó.
+- Các file baseline CP1: [cp1-health.txt](cp1-health.txt), [cp1-workload.txt](cp1-workload.txt), [cp1-pytest.txt](cp1-pytest.txt), [cp1-log-validator.txt](cp1-log-validator.txt), [cp1-dashboard-validator.txt](cp1-dashboard-validator.txt).
 
-Ảnh `04`, `05`, `13` lấy từ terminal hoặc `data/logs.jsonl`. Ảnh `06`–`10`, `14` lấy từ project Langfuse cá nhân `day13-k4-l3a-<MSSV>` và nên nhìn thấy tên project. Không mở/chụp trang API Keys.
-
-Từ `submission/REPORT.md`, dẫn ảnh bằng đường dẫn tương đối:
-
-```markdown
-![Trace waterfall](evidence/07-trace-waterfall.png)
-```
-
-Không commit secret, API key, PII thô hoặc evidence của học viên/lớp khác.
+Tất cả các file đều được trích xuất từ môi trường chạy thật, không chứa bí mật/API keys, không chứa PII nguyên văn và thuộc quyền sở hữu của học viên Từ Hoàng Giang (MSSV: 2A202602363).
