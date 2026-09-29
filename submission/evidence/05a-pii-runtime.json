@@ -1,0 +1,205 @@
+{
+  "captured_at_utc": "2026-09-29T14:48:06.606597+00:00",
+  "application_source_commit": "f614a5c29f4a3552cd9c9a4280a0de4155685ef5",
+  "command": "python scripts/capture_pii_evidence.py",
+  "transport": "httpx ASGITransport -> real FastAPI /chat -> configured JSONL processor",
+  "note": "Four synthetic fixtures, one per request to avoid preview truncation. No Cloud export; raw fixtures are in the linked script, not in evidence.",
+  "cases": [
+    {
+      "synthetic_input_fixture": "scripts/capture_pii_evidence.py::CASES[EMAIL]",
+      "input_template": "{synthetic fixture}. Explain monitoring.",
+      "pii_type": "EMAIL",
+      "http_status": 200,
+      "correlation_id": "req-8b320f6d",
+      "output_events": [
+        {
+          "service": "api",
+          "payload": {
+            "message_preview": "[REDACTED_EMAIL]. Explain monitoring."
+          },
+          "event": "request_received",
+          "correlation_id": "req-8b320f6d",
+          "env": "dev",
+          "model": "claude-sonnet-4-5",
+          "session_id": "cp4-pii-email",
+          "feature": "qa",
+          "user_id_hash": "e7f451d0363f",
+          "level": "info",
+          "ts": "2026-09-29T14:48:05.873971Z"
+        },
+        {
+          "service": "api",
+          "latency_ms": 152,
+          "ttft_ms": 50,
+          "tokens_in": 39,
+          "tokens_out": 111,
+          "cost_usd": 0.001782,
+          "quality_score": 0.8,
+          "tool_name": "retrieval",
+          "tool_success": true,
+          "payload": {
+            "answer_preview": "Starter answer. You should improve this output logic and add better quality chec..."
+          },
+          "event": "response_sent",
+          "correlation_id": "req-8b320f6d",
+          "env": "dev",
+          "model": "claude-sonnet-4-5",
+          "session_id": "cp4-pii-email",
+          "feature": "qa",
+          "user_id_hash": "e7f451d0363f",
+          "level": "info",
+          "ts": "2026-09-29T14:48:06.027720Z"
+        }
+      ],
+      "full_marker_present": true,
+      "raw_fixture_absent": true
+    },
+    {
+      "synthetic_input_fixture": "scripts/capture_pii_evidence.py::CASES[PHONE_VN]",
+      "input_template": "{synthetic fixture}. Explain monitoring.",
+      "pii_type": "PHONE_VN",
+      "http_status": 200,
+      "correlation_id": "req-35fd56d6",
+      "output_events": [
+        {
+          "service": "api",
+          "payload": {
+            "message_preview": "[REDACTED_PHONE_VN]. Explain monitoring."
+          },
+          "event": "request_received",
+          "correlation_id": "req-35fd56d6",
+          "env": "dev",
+          "model": "claude-sonnet-4-5",
+          "session_id": "cp4-pii-phone_vn",
+          "feature": "qa",
+          "user_id_hash": "e7f451d0363f",
+          "level": "info",
+          "ts": "2026-09-29T14:48:06.053334Z"
+        },
+        {
+          "service": "api",
+          "latency_ms": 151,
+          "ttft_ms": 50,
+          "tokens_in": 36,
+          "tokens_out": 141,
+          "cost_usd": 0.002223,
+          "quality_score": 0.8,
+          "tool_name": "retrieval",
+          "tool_success": true,
+          "payload": {
+            "answer_preview": "Starter answer. You should improve this output logic and add better quality chec..."
+          },
+          "event": "response_sent",
+          "correlation_id": "req-35fd56d6",
+          "env": "dev",
+          "model": "claude-sonnet-4-5",
+          "session_id": "cp4-pii-phone_vn",
+          "feature": "qa",
+          "user_id_hash": "e7f451d0363f",
+          "level": "info",
+          "ts": "2026-09-29T14:48:06.206553Z"
+        }
+      ],
+      "full_marker_present": true,
+      "raw_fixture_absent": true
+    },
+    {
+      "synthetic_input_fixture": "scripts/capture_pii_evidence.py::CASES[CCCD]",
+      "input_template": "{synthetic fixture}. Explain monitoring.",
+      "pii_type": "CCCD",
+      "http_status": 200,
+      "correlation_id": "req-9a90e6d2",
+      "output_events": [
+        {
+          "service": "api",
+          "payload": {
+            "message_preview": "[REDACTED_CCCD]. Explain monitoring."
+          },
+          "event": "request_received",
+          "correlation_id": "req-9a90e6d2",
+          "env": "dev",
+          "model": "claude-sonnet-4-5",
+          "session_id": "cp4-pii-cccd",
+          "feature": "qa",
+          "user_id_hash": "e7f451d0363f",
+          "level": "info",
+          "ts": "2026-09-29T14:48:06.217561Z"
+        },
+        {
+          "service": "api",
+          "latency_ms": 152,
+          "ttft_ms": 50,
+          "tokens_in": 37,
+          "tokens_out": 107,
+          "cost_usd": 0.001716,
+          "quality_score": 0.8,
+          "tool_name": "retrieval",
+          "tool_success": true,
+          "payload": {
+            "answer_preview": "Starter answer. You should improve this output logic and add better quality chec..."
+          },
+          "event": "response_sent",
+          "correlation_id": "req-9a90e6d2",
+          "env": "dev",
+          "model": "claude-sonnet-4-5",
+          "session_id": "cp4-pii-cccd",
+          "feature": "qa",
+          "user_id_hash": "e7f451d0363f",
+          "level": "info",
+          "ts": "2026-09-29T14:48:06.370958Z"
+        }
+      ],
+      "full_marker_present": true,
+      "raw_fixture_absent": true
+    },
+    {
+      "synthetic_input_fixture": "scripts/capture_pii_evidence.py::CASES[CREDIT_CARD]",
+      "input_template": "{synthetic fixture}. Explain monitoring.",
+      "pii_type": "CREDIT_CARD",
+      "http_status": 200,
+      "correlation_id": "req-7b0a502a",
+      "output_events": [
+        {
+          "service": "api",
+          "payload": {
+            "message_preview": "[REDACTED_CREDIT_CARD]. Explain monitoring."
+          },
+          "event": "request_received",
+          "correlation_id": "req-7b0a502a",
+          "env": "dev",
+          "model": "claude-sonnet-4-5",
+          "session_id": "cp4-pii-credit_card",
+          "feature": "qa",
+          "user_id_hash": "e7f451d0363f",
+          "level": "info",
+          "ts": "2026-09-29T14:48:06.394600Z"
+        },
+        {
+          "service": "api",
+          "latency_ms": 152,
+          "ttft_ms": 50,
+          "tokens_in": 39,
+          "tokens_out": 123,
+          "cost_usd": 0.001962,
+          "quality_score": 0.8,
+          "tool_name": "retrieval",
+          "tool_success": true,
+          "payload": {
+            "answer_preview": "Starter answer. You should improve this output logic and add better quality chec..."
+          },
+          "event": "response_sent",
+          "correlation_id": "req-7b0a502a",
+          "env": "dev",
+          "model": "claude-sonnet-4-5",
+          "session_id": "cp4-pii-credit_card",
+          "feature": "qa",
+          "user_id_hash": "e7f451d0363f",
+          "level": "info",
+          "ts": "2026-09-29T14:48:06.547597Z"
+        }
+      ],
+      "full_marker_present": true,
+      "raw_fixture_absent": true
+    }
+  ]
+}

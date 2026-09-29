@@ -36,7 +36,7 @@ def main():
                 missing.append((name, target))
     assert not missing, missing
     print("Local Markdown links in project documents: OK (code examples excluded)")
-    for name in ("cp2-cloud-observations.json", "05-pii-redaction.json", "langfuse-setup.json"):
+    for name in ("cp2-cloud-observations.json", "05-pii-redaction.json", "05a-pii-runtime.json", "langfuse-setup.json"):
         text = (ROOT / "submission/evidence" / name).read_text(encoding="utf-8")
         for raw in ("student@example.com", "0901234567", "001092001234", "4532-1111-2222-3333"):
             assert raw not in text, name

@@ -1,1 +1,5 @@
+Command: python scripts/validate_dashboard.py
+Application source: f614a5c29f4a3552cd9c9a4280a0de4155685ef5
+CP4 follow-up: application, config and tests unchanged; evidence/report updates only.
+
 HỢP LỆ: 6/6 panel có trong dashboard contract.

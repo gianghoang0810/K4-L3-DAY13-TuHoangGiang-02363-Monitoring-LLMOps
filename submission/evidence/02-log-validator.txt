@@ -1,3 +1,7 @@
+Command: python scripts/validate_logs.py
+Application source: f614a5c29f4a3552cd9c9a4280a0de4155685ef5
+CP4 follow-up: application, config and tests unchanged; evidence/report updates only.
+
 --- Lab Verification Results ---
 Total log records analyzed: 154
 Records with missing required fields: 0

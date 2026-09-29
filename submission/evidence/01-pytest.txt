@@ -1,2 +1,6 @@
+Command: python -m pytest -q
+Application source: f614a5c29f4a3552cd9c9a4280a0de4155685ef5
+CP4 follow-up: application, config and tests unchanged; evidence/report updates only.
+
 ....................................                                     [100%]
 36 passed in 3.04s

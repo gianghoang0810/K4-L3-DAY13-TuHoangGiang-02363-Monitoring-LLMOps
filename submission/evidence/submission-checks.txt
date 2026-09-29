@@ -1,3 +1,7 @@
+Command: python scripts/validate_artifacts.py
+Application source: f614a5c29f4a3552cd9c9a4280a0de4155685ef5
+CP4 follow-up: application, config and tests unchanged; evidence/report updates only.
+
 Configured credential scan: 2 keys checked; no matches in candidate repository files
 Local Markdown links in project documents: OK (code examples excluded)
 Runtime sample PII absent from exported evidence
