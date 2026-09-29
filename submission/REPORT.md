@@ -6,10 +6,10 @@
 - **MSSV:** 2A202602363
 - **Lớp:** K4-L3A
 - **Repository URL:** https://github.com/gianghoang0810/K4-L3-DAY13-TuHoangGiang-02363-Monitoring-LLMOps
-- **Commit SHA cuối:** Chưa chốt commit nộp bài; các kết quả dưới đây thuộc working tree hiện tại.
+- **Commit nội dung đã kiểm chứng:** `c8aee38` (`feat: complete monitoring and LLMOps lab`). Khi nộp, dùng SHA `HEAD` sau commit cập nhật báo cáo này.
 - **Project Langfuse:** `day13-k4-l3a-02363` (ID `cmumco6ni1z2yad0cma0yh742`, region EU).
 - **Challenge ID:** `day13-k4-l3a-monitoring-llmops-v1` (Cohort K4, seed 1311, feature: `monitoring`).
-- **Tiến độ:** Hoàn thành CP0–CP3. CP4 đã chạy kiểm tra cuối và hoàn thiện evidence; còn chốt commit, push và nộp URL + SHA trên LMS/Codelabs.
+- **Tiến độ:** Hoàn thành CP0–CP4 ở local; còn push repo và nộp URL + SHA `HEAD` trên LMS/Codelabs.
 
 ## 2. Evidence index
 
@@ -153,7 +153,7 @@ File cấu hình chính thức từ Lab Coach: `config/challenge.json` (Cohort: 
 - **Metrics → Logs → Traces:** metrics chỉ triệu chứng/khoảng thời gian; log chỉ request bằng correlation ID; trace của request chỉ span gây chậm/lỗi. Đã áp dụng điều tra thành công cả trong practice và challenge chính thức K4-L3A.
 - **Prompt version / token-cost / SLO / rollback:** truy xuất đúng prompt, theo dõi tài nguyên, đặt mục tiêu dịch vụ và phục hồi version trước. Fake LLM không cho phép kết luận v2 có chất lượng tốt hơn v1.
 - **Bài học:** health hoặc tests starter đạt không chứng minh observability đầy đủ; cần evidence runtime và đối chiếu Cloud.
-- **Giới hạn:** Regex không nhận diện mọi tên/địa chỉ; Slack delivery chưa được kiểm chứng vì lab chỉ yêu cầu cấu hình kênh/runbook; khoảng 1559 ms của trace incident chưa có child span riêng. Chưa chốt commit, push hoặc nộp LMS.
+- **Giới hạn:** Regex không nhận diện mọi tên/địa chỉ; Slack delivery chưa được kiểm chứng vì lab chỉ yêu cầu cấu hình kênh/runbook; khoảng 1559 ms của trace incident chưa có child span riêng. Repo chưa push và chưa nộp LMS.
 
 ## 9. Checklist trước khi nộp
 
